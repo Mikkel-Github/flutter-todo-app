@@ -97,10 +97,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(width: 5),
                 listTasks[index][0],
                 SizedBox(width: 10),
-                Text(listTasks[index][1], style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                )),
+                Expanded(
+                  child: Text(listTasks[index][1], style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                  )),
+                ),
               ],
             ),
           ),
